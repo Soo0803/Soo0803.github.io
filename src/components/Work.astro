@@ -1,0 +1,113 @@
+---
+import ProjectEntry from './ProjectEntry.astro';
+import MediaBox from './MediaBox.astro';
+---
+<section id="work">
+  <div class="wrap">
+    <div class="row reveal">
+      <div class="body">
+        <p class="eyebrow">Things I couldn't leave alone</p>
+        <h2>A few of the projects that took over my life for a while.</h2>
+      </div>
+    </div>
+
+    {/* Project 1: Terny */}
+    <ProjectEntry
+      kicker="The one I'm proudest of"
+      title="Terny"
+      liveUrl="https://terny.ai"
+      meta="LangChain / LangGraph · 150+ profiles from 70+ sources in under 2 min · 50+ people using it"
+      noteLabel="why it exists"
+    >
+      <p>Finding the right research to work on, or the right professor to work with, is weirdly hard. The information is all out there, just scattered across a hundred faculty pages nobody has time to read. So I built something to read them for me.</p>
+      <p>Terny is a <span class="mark">multi-agent system</span> that goes out, reads across dozens of sources, and matches you to research that actually fits. The hard part was getting a team of agents to coordinate without stepping on each other, and making the scraping reliable enough to trust. When it finally clicked and pulled together a clean shortlist in under two minutes, that was a genuinely good day.</p>
+      
+      <!-- 
+        To swap in a real screenshot, video, or iframe:
+        1. Set type="image" and src="/media/terny.png"
+        2. Set alt="Terny screenshot"
+        3. Add a caption="Terny matching a student to research in seconds."
+      -->
+      <MediaBox
+        slot="media"
+        type="empty"
+        shape="shot"
+        label="Terny screenshot or demo"
+        hint="A screenshot of the app, or a short demo video. Instructions are in the code just above."
+        icon="image"
+      />
+      
+      <Fragment slot="note">
+        I got tired of doing the search by hand, so I taught a swarm of little agents to do it for me.
+      </Fragment>
+    </ProjectEntry>
+
+    {/* Project 2: Cross-border store */}
+    <ProjectEntry
+      kicker="The one that taught me the most"
+      title="A cross-border store that got real"
+      meta="~$110K revenue in 12 months · full P&L ownership"
+      noteLabel="the lesson"
+    >
+      <p>I started a small cross-border e-commerce shop expecting a side project, and instead got a crash course in running an actual business. Sourcing, margins, ads that worked and ads that quietly ate my money, customers who were happy and customers who very much were not.</p>
+      <p>Over a year it grew to around <span class="mark">$110K in revenue</span>, and I owned the whole thing end to end. Building software is one kind of hard. Owning a P&L is a completely different one, and I'm glad I learned it while the stakes were still small enough to survive.</p>
+      
+      <Fragment slot="note">
+        Shipping code is hard. Making the numbers add up at the end of the month is a whole other skill.
+      </Fragment>
+    </ProjectEntry>
+
+    {/* Project 3: Robot Hand */}
+    <ProjectEntry
+      kicker="What I'm doing right now"
+      title="Teaching a robot hand to move like mine"
+      meta="Reinforcement learning · ManiSkill3 · dexterous manipulation"
+    >
+      <p>I'm interning at the PAIR lab on dexterous hand teleoperation, which is a fancy way of saying I'm trying to get a robot hand to copy a human hand smoothly and precisely using reinforcement learning. Fingers are deceptively hard. The thumb especially has a way of humbling you.</p>
+      <p>It's the kind of problem where progress is slow and then suddenly not, and I love that.</p>
+      
+      <!-- 
+        To swap in a real video file (mp4):
+        1. Set type="video" and src="/media/robot-hand.mp4"
+        2. Set poster="/media/robot-hand-poster.png" (optional)
+        3. Add a caption="The hand tracking my fingers in simulation."
+      -->
+      <MediaBox
+        slot="media"
+        type="empty"
+        shape="wide"
+        label="Robot hand video"
+        hint="A short clip of the hand in action is the most convincing thing on this whole page."
+        icon="video"
+      />
+    </ProjectEntry>
+
+    {/* Project 4: RISC-V Processor */}
+    <ProjectEntry
+      kicker="For the love of understanding it"
+      title="Building a processor from scratch"
+      meta="RV32IMA · out-of-order · SystemVerilog · capstone team project"
+      noteLabel="the itch"
+    >
+      <p>For my capstone, my team and I are building a scalar out-of-order RISC-V processor, the kind of design that reorders instructions on the fly to run faster. I own the execution engine, the part that actually does the math. There's no shortcut to understanding how a computer really works other than building one, and that was exactly the point.</p>
+      
+      <!-- 
+        To swap in an architecture diagram or waveform image:
+        1. Set type="image" and src="/media/processor-diagram.png"
+        2. Set alt="Processor block diagram"
+      -->
+      <MediaBox
+        slot="media"
+        type="empty"
+        shape="shot"
+        label="Diagram (optional)"
+        hint="A block diagram of the design, or delete this box if you'd rather keep it text-only."
+        icon="image"
+      />
+      
+      <Fragment slot="note">
+        I wanted to know what's really happening underneath all the abstractions, so I went and built the bottom layer.
+      </Fragment>
+    </ProjectEntry>
+  </div>
+</section>

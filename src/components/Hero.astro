@@ -1,0 +1,48 @@
+---
+import MediaBox from './MediaBox.astro';
+---
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hello" data-animate>Hi there, welcome in</p>
+        <h1 data-animate>
+          <span class="hero-line">I'm Wei Jie, and I</span>
+          <span class="hero-line">like building things</span>
+          <span class="hero-line">I <em>can't stop thinking about.</em></span>
+        </h1>
+        <p class="lede" data-animate>
+          A Malaysian kid who somehow ended up in Shanghai. I spend my days teaching robot hands how to move, and my evenings either on a football pitch or lost in whatever idea has its hooks in me that week. <span class="soft">I made this little corner of the internet so you could get to know the person, not just the resume.</span>
+        </p>
+        <nav class="links" data-animate>
+          <a href="#about">read on ↓</a>
+          <!-- EMAIL PLACEHOLDER -->
+          <a href="mailto:sooweijie@example.com">email</a>
+          <!-- GITHUB LINK (CORRECT) -->
+          <a href="https://github.com/Soo0803" target="_blank" rel="noopener">github</a>
+          <!-- LINKEDIN PLACEHOLDER -->
+          <a href="#" target="_blank" rel="noopener">linkedin</a>
+          <!-- RESUME PLACEHOLDER -->
+          <a href="#resume">resume</a>
+        </nav>
+      </div>
+
+      <div class="hero-portrait" data-animate>
+        <!-- 
+          To swap in a real portrait photo:
+          1. Drop your vertical photo (e.g. portrait.jpg) in public/media/
+          2. Change type to "image" and set src to "/media/portrait.jpg"
+          3. Set alt="Wei Jie"
+        -->
+        <MediaBox
+          type="empty"
+          shape="portrait"
+          label="Your photo"
+          hint="A portrait of you goes here. See the note in the code just above this box."
+          block={false}
+          icon="image"
+        />
+      </div>
+    </div>
+  </div>
+</header>

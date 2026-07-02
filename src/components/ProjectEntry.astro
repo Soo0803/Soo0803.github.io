@@ -1,0 +1,38 @@
+---
+interface Props {
+  kicker: string;
+  title: string;
+  liveUrl?: string;
+  meta: string;
+  noteLabel?: string;
+}
+
+const { kicker, title, liveUrl, meta, noteLabel } = Astro.props;
+---
+<div class="row reveal">
+  <div class="body">
+    <div class="project">
+      <p class="kicker">{kicker}</p>
+      <h3>
+        {title}
+        {liveUrl && (
+          <a class="live" href={liveUrl} target="_blank" rel="noopener">it's live →</a>
+        )}
+      </h3>
+      <div class="prose">
+        <slot />
+      </div>
+      
+      <slot name="media" />
+      
+      <p class="meta">{meta}</p>
+    </div>
+  </div>
+  
+  {noteLabel && (
+    <aside class="note">
+      <span class="who">{noteLabel}</span>
+      <slot name="note" />
+    </aside>
+  )}
+</div>

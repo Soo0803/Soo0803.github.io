@@ -1,0 +1,12 @@
+:root {
+  --bg: #FAF4E8;         /* warm ivory background */
+  --bg-warm: #F5E9D6;    /* panels, insets */
+  --wash: #F6E1C7;       /* hero light wash */
+  --ink: #2B2721;        /* primary text */
+  --ink-soft: #6E6456;   /* secondary text, captions */
+  --moss: #46583C;       /* primary accent */
+  --moss-deep: #374733;  /* hero italic emphasis */
+  --honey: #C4892E;      /* underlines, highlights */
+  --line: #E5D9C2;       /* hairline dividers */
+  --max: 900px;
+}
