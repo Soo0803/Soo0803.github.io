@@ -60,12 +60,21 @@ summary:focus-visible {
 /* structural row: body column + margin-note gutter */
 .row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 210px;
+  grid-template-columns: minmax(0, 1fr) 300px;
   gap: 46px;
   align-items: start;
 }
 .row .body {
   max-width: 600px;
+}
+
+.side-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.side-col .media-block {
+  margin-top: 0;
 }
 
 .note {
@@ -502,6 +511,12 @@ footer .fine {
   }
   .row .body {
     max-width: none;
+  }
+  .side-col {
+    margin-top: 22px;
+  }
+  .side-col .note {
+    margin-top: 0;
   }
   .note {
     margin: 22px 0 0;

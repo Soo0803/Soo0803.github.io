@@ -23,16 +23,19 @@ const { kicker, title, liveUrl, meta, noteLabel } = Astro.props;
         <slot />
       </div>
       
-      <slot name="media" />
-      
       <p class="meta">{meta}</p>
     </div>
   </div>
   
-  {noteLabel && (
-    <aside class="note">
-      <span class="who">{noteLabel}</span>
-      <slot name="note" />
-    </aside>
+  {(noteLabel || Astro.slots.has('media')) && (
+    <div class="side-col">
+      {noteLabel && (
+        <aside class="note">
+          <span class="who">{noteLabel}</span>
+          <slot name="note" />
+        </aside>
+      )}
+      <slot name="media" />
+    </div>
   )}
 </div>
