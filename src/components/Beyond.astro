@@ -1,46 +1,54 @@
 ---
 import MediaBox from './MediaBox.astro';
+import { translations } from '../i18n/translations';
+
+interface Props {
+  lang?: 'en' | 'zh';
+}
+
+const { lang = 'en' } = Astro.props;
+const t = translations[lang].beyond;
+const f = t.facets;
 ---
 <section id="beyond">
   <div class="wrap">
     <div class="row reveal">
       <div class="body">
-        <p class="eyebrow">The rest of me</p>
-        <h2>The parts that don't fit on a resume, but explain me better.</h2>
+        <p class="eyebrow">{t.eyebrow}</p>
+        <h2>{t.title}</h2>
       </div>
     </div>
     <div class="row reveal">
       <div class="body">
         <div class="facets">
           <div class="facet">
-            <span class="tag">On the pitch</span>
-            <h3>Football</h3>
-            <p>I play competitively and was vice captain of the university varsity team. Leading a group of tired, stubborn, talented people toward one thing taught me more about people than any class did. I was lucky enough to be named an Outstanding Student Athlete in 2025.</p>
+            <span class="tag">{f.football.tag}</span>
+            <h3>{f.football.title}</h3>
+            <p>{f.football.prose}</p>
           </div>
           <div class="facet">
-            <span class="tag">A way of thinking</span>
-            <h3>Value investing</h3>
-            <p>I got pulled into value investing and never left. I admire how Li Lu thinks, patient, independent, willing to be wrong for a long time before being right. It's shaped how I look at almost everything, not just markets.</p>
+            <span class="tag">{f.investing.tag}</span>
+            <h3>{f.investing.title}</h3>
+            <p>{f.investing.prose}</p>
           </div>
           <div class="facet">
-            <span class="tag">In progress</span>
-            <h3>Learning Japanese</h3>
-            <p>I'm teaching myself Japanese, badly and happily. It's a nice reminder of what it feels like to be a beginner at something again, which I think is healthy to keep doing.</p>
+            <span class="tag">{f.japanese.tag}</span>
+            <h3>{f.japanese.title}</h3>
+            <p>{f.japanese.prose}</p>
           </div>
           <div class="facet">
-            <span class="tag">The thread</span>
-            <h3>Builder and operator</h3>
-            <p>If there's one thing that ties all of this together, it's that I like making things exist and then taking care of them. Whether that's code, a business, or a team, the joy is the same.</p>
+            <span class="tag">{f.builder.tag}</span>
+            <h3>{f.builder.title}</h3>
+            <p>{f.builder.prose}</p>
           </div>
         </div>
 
         <div class="currently">
-          <span class="tag">Currently</span>
+          <span class="tag">{t.currently.tag}</span>
           <ul>
-            <li>Finishing my degree and my capstone processor, graduating this August</li>
-            <li>Getting a robot hand to stop fumbling its thumb</li>
-            <li>Working through my Japanese textbook, one stubborn kanji at a time</li>
-            <li>Reading whatever a good investor pointed me toward this month</li>
+            {t.currently.items.map(item => (
+              <li>{item}</li>
+            ))}
           </ul>
         </div>
 
@@ -54,16 +62,16 @@ import MediaBox from './MediaBox.astro';
           <MediaBox
             type="empty"
             shape="shot"
-            label="Photo"
-            hint="On the pitch, maybe."
+            label={t.gallery.label}
+            hint={t.gallery.hint1}
             block={false}
             icon="image"
           />
           <MediaBox
             type="empty"
             shape="shot"
-            label="Photo"
-            hint="Something that's just you."
+            label={t.gallery.label}
+            hint={t.gallery.hint2}
             block={false}
             icon="image"
           />

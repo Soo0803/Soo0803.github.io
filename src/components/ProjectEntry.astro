@@ -5,9 +5,12 @@ interface Props {
   liveUrl?: string;
   meta: string;
   noteLabel?: string;
+  lang?: 'en' | 'zh';
 }
 
-const { kicker, title, liveUrl, meta, noteLabel } = Astro.props;
+const { kicker, title, liveUrl, meta, noteLabel, lang = 'en' } = Astro.props;
+
+const liveLabel = lang === 'en' ? "it's live →" : "已上线 →";
 ---
 <div class="row reveal">
   <div class="body">
@@ -16,7 +19,7 @@ const { kicker, title, liveUrl, meta, noteLabel } = Astro.props;
       <h3>
         {title}
         {liveUrl && (
-          <a class="live" href={liveUrl} target="_blank" rel="noopener">it's live →</a>
+          <a class="live" href={liveUrl} target="_blank" rel="noopener">{liveLabel}</a>
         )}
       </h3>
       <div class="prose">

@@ -1,22 +1,32 @@
 ---
 import MarginNote from './MarginNote.astro';
+import { translations } from '../i18n/translations';
+
+interface Props {
+  lang?: 'en' | 'zh';
+}
+
+const { lang = 'en' } = Astro.props;
+const t = translations[lang].about;
 ---
 <section id="about">
   <div class="wrap">
     <div class="row reveal">
       <div class="body">
-        <p class="eyebrow">A bit about me</p>
-        <h2>I grew up switching languages mid-sentence.</h2>
+        <p class="eyebrow">{t.eyebrow}</p>
+        <h2>{t.title}</h2>
       </div>
     </div>
     <div class="row reveal">
       <div class="body prose">
-        <p>I'm Malaysian, and like a lot of Malaysians I picked up a few languages just by living. English, Mandarin, Malay, and Hokkien all got tangled together at the dinner table, and I never really thought of it as a skill until people started pointing it out. These days I'm slowly adding Japanese to the pile, mostly for the fun of it.</p>
-        <p>I came to Shanghai to study electrical and computer engineering at the <span class="mark">UM-SJTU Joint Institute</span>, and I've been here ever since, figuring out what I actually want to do with all of it. The honest answer is that I've never been able to pick a single lane. I love the deep technical stuff, the kind where you have to understand exactly how a machine thinks. But I also love the messier side, taking an idea and turning it into a real thing that real people use, money and mistakes and all.</p>
-        <p>So I've spent my degree doing both, and I think that mix is the truest thing about me.</p>
+        <p>{t.prose1}</p>
+        <p>
+          {t.prose2_part1}<span class="mark">{t.prose2_highlight}</span>{t.prose2_part2}
+        </p>
+        <p>{t.prose3}</p>
       </div>
-      <MarginNote label="the count">
-        I count in Hokkien, argue in Mandarin, and daydream in English. Japanese is still very much a work in progress.
+      <MarginNote label={t.marginNoteLabel}>
+        {t.marginNote}
       </MarginNote>
     </div>
   </div>

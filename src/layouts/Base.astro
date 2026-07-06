@@ -1,31 +1,42 @@
 ---
 import '../styles/global.css';
+import LanguageSwitcher from '../components/LanguageSwitcher.astro';
+import { translations } from '../i18n/translations';
 
 interface Props {
   title?: string;
   description?: string;
+  lang?: 'en' | 'zh';
 }
 
 const { 
-  title = "Wei Jie", 
-  description = "Wei Jie's personal website. Malaysian kid in Shanghai, electrical/computer engineering student, and builder of things." 
+  title = "Wei Jie",
+  lang = 'en',
+  description
 } = Astro.props;
+
+// Resolve translated defaults
+const t = translations[lang];
+const metaDescription = description || t.layout.metaDescription;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
-  <meta name="description" content={description}>
+  <meta name="description" content={metaDescription}>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main-content" class="skip-link">{t.layout.skipLink}</a>
   
+  <!-- Sleek Floating Language Switcher -->
+  <LanguageSwitcher lang={lang} />
+
   <main id="main-content">
     <slot />
   </main>

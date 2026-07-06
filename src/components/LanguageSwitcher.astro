@@ -1,0 +1,88 @@
+---
+const { lang = 'en' } = Astro.props;
+
+// Determine target links
+const englishPath = '/';
+const chinesePath = '/zh/';
+---
+
+<div class="lang-switcher" data-animate>
+  <a 
+    href={englishPath} 
+    class={`lang-btn ${lang === 'en' ? 'active' : ''}`}
+    aria-label="Switch to English"
+  >
+    EN
+  </a>
+  <span class="divider">/</span>
+  <a 
+    href={chinesePath} 
+    class={`lang-btn ${lang === 'zh' ? 'active' : ''}`}
+    aria-label="切换至中文"
+  >
+    中文
+  </a>
+</div>
+
+<style>
+  .lang-switcher {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(250, 244, 232, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(43, 39, 33, 0.05);
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .lang-switcher:hover {
+    background: rgba(250, 244, 232, 0.95);
+    border-color: var(--honey);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 24px rgba(43, 39, 33, 0.08);
+  }
+
+  .lang-btn {
+    color: var(--ink-soft);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 2px 4px;
+  }
+
+  .lang-btn:hover {
+    color: var(--honey);
+  }
+
+  .lang-btn.active {
+    color: var(--moss);
+    font-weight: 600;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .divider {
+    color: var(--line);
+    user-select: none;
+  }
+
+  /* Responsive styling for smaller devices */
+  @media (max-width: 768px) {
+    .lang-switcher {
+      top: 16px;
+      right: 16px;
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+  }
+</style>
