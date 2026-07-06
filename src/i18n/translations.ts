@@ -22,13 +22,13 @@ export const translations = {
     about: {
       eyebrow: "A bit about me",
       title: "I grew up switching languages mid-sentence.",
-      prose1: "I'm Malaysian, and like a lot of Malaysians I picked up a few languages just by living. English, Mandarin, Malay, and Hokkien all got tangled together at the dinner table, and I never really thought of it as a skill until people started pointing it out. These days I'm slowly adding Japanese to the pile, mostly for the fun of it.",
+      prose1: "I'm Malaysian, and like a lot of Malaysians I picked up a few languages just by living. English, Mandarin, Malay, and Hokkien all got tangled together at the dinner table, and I never really thought of it as a skill until people started pointing it out.",
       prose2_part1: "I came to Shanghai to study electrical and computer engineering at the ",
       prose2_highlight: "UM-SJTU Joint Institute",
       prose2_part2: ", and I've been here ever since, figuring out what I actually want to do with all of it. The honest answer is that I've never been able to pick a single lane. I love the deep technical stuff, the kind where you have to understand exactly how a machine thinks. But I also love the messier side, taking an idea and turning it into a real thing that real people use, money and mistakes and all.",
       prose3: "So I've spent my degree doing both, and I think that mix is the truest thing about me.",
       marginNoteLabel: "the count",
-      marginNote: "I count in Hokkien, argue in Mandarin, and daydream in English. Japanese is still very much a work in progress."
+      marginNote: "I count in Hokkien, argue in Mandarin, and daydream in English."
     },
     work: {
       eyebrow: "Things I couldn't leave alone",
@@ -88,16 +88,6 @@ export const translations = {
           title: "Football",
           prose: "I play competitively and was vice captain of the university varsity team. Leading a group of tired, stubborn, talented people toward one thing taught me more about people than any class did. I was lucky enough to be named an Outstanding Student Athlete in 2025."
         },
-        investing: {
-          tag: "A way of thinking",
-          title: "Value investing",
-          prose: "I got pulled into value investing and never left. I admire how Li Lu thinks, patient, independent, willing to be wrong for a long time before being right. It's shaped how I look at almost everything, not just markets."
-        },
-        japanese: {
-          tag: "In progress",
-          title: "Learning Japanese",
-          prose: "I'm teaching myself Japanese, badly and happily. It's a nice reminder of what it feels like to be a beginner at something again, which I think is healthy to keep doing."
-        },
         builder: {
           tag: "The thread",
           title: "Builder and operator",
@@ -108,9 +98,7 @@ export const translations = {
         tag: "Currently",
         items: [
           "Finishing my degree and my capstone processor, graduating this August",
-          "Getting a robot hand to stop fumbling its thumb",
-          "Working through my Japanese textbook, one stubborn kanji at a time",
-          "Reading whatever a good investor pointed me toward this month"
+          "Getting a robot hand to stop fumbling its thumb"
         ]
       },
       gallery: {
@@ -153,13 +141,13 @@ export const translations = {
     about: {
       eyebrow: "关于我",
       title: "我从小就在一句话里切换几种语言。",
-      prose1: "我是马来西亚人。和许多马来西亚人一样，我仅仅在日常生活中就学会了几种语言。英语、普通话、马来语和闽南语（福建话）在餐桌上混杂在一起，我从来没觉得这是一种技能，直到别人开始指出这一点。最近我正慢慢把日语加入其中，主要是觉得好玩。",
+      prose1: "我是马来西亚人。和许多马来西亚人一样，我仅仅在日常生活中就学会了几种语言。英语、普通话、马来语和闽南语（福建话）在餐桌上混杂在一起，我从来没觉得这是一种技能，直到别人开始指出这一点。",
       prose2_part1: "我来到上海，在交大密西根学院（",
       prose2_highlight: "UM-SJTU Joint Institute",
       prose2_part2: "）学习电子与计算机工程，自那以后就一直待在这里，探索自己到底想用所学做点什么。坦白说，我从来无法只选一条道路。我喜欢深度的技术，那种需要你精确理解机器如何思考的领域；但我也喜欢那些更具挑战性、更“混乱”的一面——将一个想法落地，变成真实的人们会使用的真实产品，哪怕伴随着资金成本和重重失误。",
       prose3: "所以我的大学时光都在这两者之间度过，而我认为这种融合正是最真实的自我。",
       marginNoteLabel: "语言习惯",
-      marginNote: "我用闽南语心算，用普通话辩论，用英语白日做梦。至于日语，还在艰难学习中。"
+      marginNote: "我用闽南语心算，用普通话辩论，用英语白日做梦。"
     },
     work: {
       eyebrow: "我无法置之不理的事",
@@ -219,16 +207,6 @@ export const translations = {
           title: "足球",
           prose: "我踢竞技足球，曾担任大学校队的副队长。带领一群疲惫、固执却充满才华的人朝着同一个目标前进，这让我学到了比任何课堂都多的“人学”。我很幸运能在2025年被评为优秀学生运动员。"
         },
-        investing: {
-          tag: "一种思维方式",
-          title: "价值投资",
-          prose: "我接触到价值投资后就再也没有离开。我很钦佩李录的思考方式：耐心、独立，愿意在正确前承受长期的“错误”。这塑造了我看待几乎所有事物的方式，而不仅仅是市场。"
-        },
-        japanese: {
-          tag: "进行中",
-          title: "学习日语",
-          prose: "我正在自学日语，虽然水平有限但非常开心。这能很好地提醒我重新成为一个初学者的感觉，我认为保持这种状态对人很有好处。"
-        },
         builder: {
           tag: "主线",
           title: "构建与运营",
@@ -239,9 +217,7 @@ export const translations = {
         tag: "近况",
         items: [
           "正在完成我的学位和作为毕业设计的处理器，今年八月毕业",
-          "教机器人手不再让大拇指笨手笨脚",
-          "啃我的日语教科书，一个个死磕汉字",
-          "读一些优秀投资者这个月推荐的书籍"
+          "教机器人手不再让大拇指笨手笨脚"
         ]
       },
       gallery: {
