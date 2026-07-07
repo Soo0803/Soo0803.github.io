@@ -60,15 +60,12 @@ summary:focus-visible {
 /* structural row: body column + margin-note gutter */
 .row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
-  gap: 46px;
+  grid-template-columns: minmax(0, 680px) 1fr;
+  gap: 56px;
   align-items: start;
 }
-.row.project-row {
-  grid-template-columns: 1fr 1.4fr;
-}
 .row .body {
-  max-width: 680px;
+  max-width: 100%;
 }
 
 .side-col {
@@ -514,7 +511,7 @@ footer .fine {
   body {
     font-size: 18px;
   }
-  .row, .row.project-row {
+  .row {
     grid-template-columns: 1fr;
     gap: 0;
   }
