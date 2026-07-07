@@ -130,11 +130,11 @@ export const translations = {
   zh: {
     layout: {
       skipLink: "跳过并阅读主要内容",
-      metaDescription: "魏杰的个人网站。在上海的马来西亚小伙，电子与计算机工程系学生，喜欢构建有趣的事物。"
+      metaDescription: "伟捷的个人网站。在上海的马来西亚小伙，电子与计算机工程系学生，喜欢构建有趣的事物。"
     },
     hero: {
       hello: "你好，欢迎光临",
-      line1: "我是 魏杰，我",
+      line1: "我是 伟捷，我",
       line2: "喜欢构建那些",
       line3: "让我魂牵梦绕的事物。",
       lede: "一个不知怎么就来到了上海的马来西亚小伙。我的白天在教机器人手如何移动，晚上则要么在足球场上，要么沉迷于那一周最吸引我的某个想法。",
@@ -252,7 +252,7 @@ export const translations = {
       downloadResume: "下载简历 (PDF)"
     },
     footer: {
-      fine: "由 魏杰 制作 · 上海 · "
+      fine: "由 伟捷 制作 · 上海 · "
     }
   }
 } as const;

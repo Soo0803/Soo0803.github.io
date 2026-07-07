@@ -47,12 +47,11 @@ const t = translations[lang].hero;
           3. Set alt="Wei Jie"
         -->
         <MediaBox
-          type="empty"
+          type="image"
           shape="portrait"
-          label={t.photoLabel}
-          hint={t.photoHint}
+          src="/media/profile_photo.JPG"
+          alt={lang === 'en' ? "Wei Jie" : "伟捷"}
           block={false}
-          icon="image"
         />
       </div>
     </div>
