@@ -119,7 +119,7 @@ export const translations = {
     contact: {
       eyebrow: "Say hi",
       title: "I'm graduating this August, and figuring out what's next.",
-      lede: "I'm open to both worlds I've been living in, building AI and engineering, and the business side of things. If any of this resonated, or you just want to talk football or markets, I'd genuinely love to hear from you.",
+      lede: "I'm open to both worlds I've been living in, building AI and Robotics engineering, and the business side of things. If any of this resonated, or you just want to talk football and any new sharing, I'd genuinely love to hear from you.",
       emailMe: "email me",
       downloadResume: "download resume (pdf)"
     },
@@ -247,7 +247,7 @@ export const translations = {
     contact: {
       eyebrow: "打个招呼",
       title: "我今年八月毕业，正在规划人生的下一阶段。",
-      lede: "我对目前所处的两个世界都持开放态度：无论是人工智能与工程构建，还是商业运营方面。如果我的经历引起了你的共鸣，或者你只是想聊聊足球或市场，我真的非常期待你的来信。",
+      lede: "我对目前所处的两个世界都持开放态度：无论是人工智能与机器人工程构建，还是商业运营方面。如果我的经历引起了你的共鸣，或者你只是想聊聊足球或分享新鲜事，我真的非常期待你的来信。",
       emailMe: "发送邮件",
       downloadResume: "下载简历 (PDF)"
     },
