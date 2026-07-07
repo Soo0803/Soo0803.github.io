@@ -60,7 +60,7 @@ summary:focus-visible {
 /* structural row: body column + margin-note gutter */
 .row {
   display: grid;
-  grid-template-columns: minmax(0, 680px) 1fr;
+  grid-template-columns: minmax(0, 580px) 1fr;
   gap: 56px;
   align-items: start;
 }
@@ -434,6 +434,9 @@ footer .fine {
 }
 .media.wide {
   aspect-ratio: 16/9;
+}
+.media.terny-media {
+  aspect-ratio: 1024/469 !important;
 }
 .media.shot {
   aspect-ratio: 16/10;

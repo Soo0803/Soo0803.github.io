@@ -68,7 +68,7 @@ const shouldWrap = block || caption;
         2. Set type="video", src="/media/video.mp4", and poster="/media/poster.png"
       */}
       {type === 'video' && (
-        <video src={src} poster={poster} controls></video>
+        <video src={src} poster={poster} autoplay loop muted playsinline controls></video>
       )}
       
       {/* 
@@ -107,7 +107,7 @@ const shouldWrap = block || caption;
     )}
     
     {type === 'video' && (
-      <video src={src} poster={poster} controls></video>
+      <video src={src} poster={poster} autoplay loop muted playsinline controls></video>
     )}
     
     {type === 'embed' && (
