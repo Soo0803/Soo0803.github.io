@@ -26,3 +26,5 @@ pnpm-debug.log*
 # local user images
 image/
 
+# local user videos
+videos/

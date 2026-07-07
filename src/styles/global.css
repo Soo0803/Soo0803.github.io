@@ -60,7 +60,7 @@ summary:focus-visible {
 /* structural row: body column + margin-note gutter */
 .row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 300px;
+  grid-template-columns: minmax(0, 1fr) 360px;
   gap: 46px;
   align-items: start;
 }
@@ -402,7 +402,7 @@ footer .fine {
 /* ---------- HERO WITH PORTRAIT ---------- */
 .hero-inner {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr 1.35fr;
   gap: 56px;
   align-items: center;
 }
@@ -547,7 +547,7 @@ footer .fine {
     gap: 38px;
   }
   .hero-portrait {
-    max-width: 480px;
+    max-width: 540px;
     width: 100%;
   }
   .gallery {
