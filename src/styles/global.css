@@ -402,7 +402,7 @@ footer .fine {
 /* ---------- HERO WITH PORTRAIT ---------- */
 .hero-inner {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1fr 1.2fr;
   gap: 56px;
   align-items: center;
 }

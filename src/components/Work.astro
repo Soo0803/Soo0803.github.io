@@ -20,7 +20,33 @@ const p = t.projects;
       </div>
     </div>
 
-    {/* Project 1: Terny */}
+    {/* Project 1: Robot Hand */}
+    <ProjectEntry
+      kicker={p.robotHand.kicker}
+      title={p.robotHand.title}
+      meta={p.robotHand.meta}
+      lang={lang}
+    >
+      <p>{p.robotHand.p1}</p>
+      <p>{p.robotHand.p2}</p>
+      
+      <!-- 
+        To swap in a real video file (mp4):
+        1. Set type="video" and src="/media/robot-hand.mp4"
+        2. Set poster="/media/robot-hand-poster.png" (optional)
+        3. Add a caption="The hand tracking my fingers in simulation."
+      -->
+      <MediaBox
+        slot="media"
+        type="empty"
+        shape="wide"
+        label={p.robotHand.mediaLabel}
+        hint={p.robotHand.mediaHint}
+        icon="video"
+      />
+    </ProjectEntry>
+
+    {/* Project 2: Terny */}
     <ProjectEntry
       kicker={p.terny.kicker}
       title={p.terny.title}
@@ -52,7 +78,7 @@ const p = t.projects;
       </Fragment>
     </ProjectEntry>
 
-    {/* Project 2: Cross-border store */}
+    {/* Project 3: Cross-border store */}
     <ProjectEntry
       kicker={p.ecommerce.kicker}
       title={p.ecommerce.title}
@@ -68,33 +94,32 @@ const p = t.projects;
       </Fragment>
     </ProjectEntry>
 
-    {/* Project 3: Robot Hand */}
+    {/* Project 4: Undergraduate Research */}
     <ProjectEntry
-      kicker={p.robotHand.kicker}
-      title={p.robotHand.title}
-      meta={p.robotHand.meta}
+      kicker={p.research.kicker}
+      title={p.research.title}
+      meta={p.research.meta}
+      noteLabel={p.research.noteLabel}
       lang={lang}
     >
-      <p>{p.robotHand.p1}</p>
-      <p>{p.robotHand.p2}</p>
+      <p>{p.research.p1}</p>
+      <p>{p.research.p2}</p>
       
-      <!-- 
-        To swap in a real video file (mp4):
-        1. Set type="video" and src="/media/robot-hand.mp4"
-        2. Set poster="/media/robot-hand-poster.png" (optional)
-        3. Add a caption="The hand tracking my fingers in simulation."
-      -->
       <MediaBox
         slot="media"
         type="empty"
-        shape="wide"
-        label={p.robotHand.mediaLabel}
-        hint={p.robotHand.mediaHint}
-        icon="video"
+        shape="shot"
+        label={p.research.mediaLabel}
+        hint={p.research.mediaHint}
+        icon="image"
       />
+      
+      <Fragment slot="note">
+        {p.research.note}
+      </Fragment>
     </ProjectEntry>
 
-    {/* Project 4: RISC-V Processor */}
+    {/* Project 5: RISC-V Processor */}
     <ProjectEntry
       kicker={p.processor.kicker}
       title={p.processor.title}
@@ -120,31 +145,6 @@ const p = t.projects;
       
       <Fragment slot="note">
         {p.processor.note}
-      </Fragment>
-    </ProjectEntry>
-
-    {/* Project 5: Undergraduate Research */}
-    <ProjectEntry
-      kicker={p.research.kicker}
-      title={p.research.title}
-      meta={p.research.meta}
-      noteLabel={p.research.noteLabel}
-      lang={lang}
-    >
-      <p>{p.research.p1}</p>
-      <p>{p.research.p2}</p>
-      
-      <MediaBox
-        slot="media"
-        type="empty"
-        shape="shot"
-        label={p.research.mediaLabel}
-        hint={p.research.mediaHint}
-        icon="image"
-      />
-      
-      <Fragment slot="note">
-        {p.research.note}
       </Fragment>
     </ProjectEntry>
   </div>
