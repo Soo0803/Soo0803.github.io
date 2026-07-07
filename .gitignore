@@ -28,3 +28,6 @@ image/
 
 # local user videos
 videos/
+
+# local root pdf files
+/SOO_WEI_JIE.pdf

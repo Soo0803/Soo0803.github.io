@@ -68,7 +68,7 @@ summary:focus-visible {
   grid-template-columns: 1fr 1.4fr;
 }
 .row .body {
-  max-width: 600px;
+  max-width: 680px;
 }
 
 .side-col {
