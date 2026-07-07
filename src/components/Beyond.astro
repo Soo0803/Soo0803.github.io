@@ -27,6 +27,11 @@ const f = t.facets;
             <p>{f.football.prose}</p>
           </div>
           <div class="facet">
+            <span class="tag">{f.isa.tag}</span>
+            <h3>{f.isa.title}</h3>
+            <p>{f.isa.prose}</p>
+          </div>
+          <div class="facet">
             <span class="tag">{f.builder.tag}</span>
             <h3>{f.builder.title}</h3>
             <p>{f.builder.prose}</p>
@@ -42,28 +47,20 @@ const f = t.facets;
           </ul>
         </div>
 
-        <!-- 
-          To drop candid photos here (football, travel, lab, friends):
-          1. Place files in public/media/
-          2. Set type="image" and src="/media/filename.jpg"
-          3. You can add more MediaBox components here, the grid will automatically handle any number.
-        -->
         <div class="gallery">
           <MediaBox
-            type="empty"
-            shape="shot"
-            label={t.gallery.label}
-            hint={t.gallery.hint1}
+            type="image"
+            shape="wide"
+            src="/media/football.jpg"
+            alt="Wei Jie playing football on the pitch"
             block={false}
-            icon="image"
           />
           <MediaBox
-            type="empty"
-            shape="shot"
-            label={t.gallery.label}
-            hint={t.gallery.hint2}
+            type="image"
+            shape="wide"
+            src="/media/isa_pic.jpeg"
+            alt="Wei Jie serving as ISA Vice President at an event"
             block={false}
-            icon="image"
           />
         </div>
       </div>

@@ -97,6 +97,11 @@ export const translations = {
           title: "Football",
           prose: "I play competitively and was vice captain of the university varsity team. Leading a group of tired, stubborn, talented people toward one thing taught me more about people than any class did. I was lucky enough to be named an Outstanding Student Athlete in 2025."
         },
+        isa: {
+          tag: "Leadership",
+          title: "ISA Vice President",
+          prose: "Serving as Vice President of the International Student Association (ISA), I helped foster a vibrant, welcoming home for students from dozens of countries. Organizing large-scale cross-cultural festivals and coordinating student integration was an exercise in cross-functional leadership, cultural diplomacy, and community building."
+        },
         builder: {
           tag: "The thread",
           title: "Builder and operator",
@@ -224,6 +229,11 @@ export const translations = {
           tag: "赛场之上",
           title: "足球",
           prose: "我踢竞技足球，曾担任大学校队的副队长。带领一群疲惫、固执却充满才华的人朝着同一个目标前进，这让我学到了比任何课堂都多的“人学”。我很幸运能在2025年被评为优秀学生运动员。"
+        },
+        isa: {
+          tag: "领导力",
+          title: "留学生协会 (ISA) 副会长",
+          prose: "作为国际学生协会 (ISA) 的副会长，我致力于为来自数十个国家的学生营造如家一般的温暖港湾。组织大型跨文化节日和协调跨文化学生交融的经历，极大锻炼了我的团队协作、文化交流与社群领导能力。"
         },
         builder: {
           tag: "主线",
