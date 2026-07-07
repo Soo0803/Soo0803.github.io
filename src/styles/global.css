@@ -255,10 +255,13 @@ em {
 }
 
 /* project entries */
-.project {
-  margin-bottom: 64px;
+.project-row {
+  margin-bottom: 130px;
 }
-.project:last-child {
+.project-row:last-of-type {
+  margin-bottom: 0;
+}
+.project {
   margin-bottom: 0;
 }
 .project .kicker {
