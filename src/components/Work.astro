@@ -122,5 +122,30 @@ const p = t.projects;
         {p.processor.note}
       </Fragment>
     </ProjectEntry>
+
+    {/* Project 5: Undergraduate Research */}
+    <ProjectEntry
+      kicker={p.research.kicker}
+      title={p.research.title}
+      meta={p.research.meta}
+      noteLabel={p.research.noteLabel}
+      lang={lang}
+    >
+      <p>{p.research.p1}</p>
+      <p>{p.research.p2}</p>
+      
+      <MediaBox
+        slot="media"
+        type="empty"
+        shape="shot"
+        label={p.research.mediaLabel}
+        hint={p.research.mediaHint}
+        icon="image"
+      />
+      
+      <Fragment slot="note">
+        {p.research.note}
+      </Fragment>
+    </ProjectEntry>
   </div>
 </section>

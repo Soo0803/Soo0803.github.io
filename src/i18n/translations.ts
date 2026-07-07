@@ -76,6 +76,17 @@ export const translations = {
           mediaHint: "A block diagram of the design, or delete this box if you'd rather keep it text-only.",
           noteLabel: "the itch",
           note: "I wanted to know what's really happening underneath all the abstractions, so I went and built the bottom layer."
+        },
+        research: {
+          kicker: "Hardware-software integration",
+          title: "Pneumatic conforming insole prototype",
+          meta: "Prof. Shane Johnson's Lab · Raspberry Pi / Arduino · MATLAB / MeshLab · Sept 2023 – Aug 2024",
+          p1: "Custom orthoses need to adapt to individual foot shapes, which is difficult with static designs. In Prof. Shane Johnson's lab, we designed and built a prototype insole using a pneumatically actuated conforming ergonomic system.",
+          p2: "I took charge of the embedded device programming (Python) and interfaced various microelectronic components using a Raspberry Pi and Arduino microcontroller. To test the prototype, we recruited 15 participants for functional testing, and I analyzed 3D morphology and force data using MATLAB and MeshLab.",
+          mediaLabel: "Research photo",
+          mediaHint: "A photo of the prototype device, or delete this box if you'd rather keep it text-only.",
+          noteLabel: "the device",
+          note: "Using pneumatic chambers, we could dynamically adjust the pressure distribution on different parts of the foot."
         }
       }
     },
@@ -195,6 +206,17 @@ export const translations = {
           mediaHint: "设计方案的结构框图。",
           noteLabel: "探索",
           note: "我想知道在所有的抽象层之下到底发生了什么，于是我自己去造了最底层。"
+        },
+        research: {
+          kicker: "软硬件协同设计",
+          title: "气动自适应人体工学鞋垫原型",
+          meta: "Shane Johnson 教授实验室 · 树莓派 / Arduino · MATLAB / MeshLab · 2023年9月 – 2024年8月",
+          p1: "传统的定制矫形支具难以适应多变的脚部形状。在 Shane Johnson 教授的实验室中，我们设计并构建了一款基于气动自适应人体工学系统的鞋垫原型。",
+          p2: "我负责了嵌入式设备编程（基于 Python），并使用树莓派和 Arduino 微控制器连接了各种微电子元件。为了测试该原型，我们招募了 15 名受试者进行功能性测试，并由我使用 MATLAB 和 MeshLab 分析了三维形态与受力数据。",
+          mediaLabel: "研究照",
+          mediaHint: "鞋垫原型的照片，如果没有可以删除此框。",
+          noteLabel: "设备设计",
+          note: "通过气动气室，我们可以动态调节脚部不同区域的压力分布。"
         }
       }
     },
