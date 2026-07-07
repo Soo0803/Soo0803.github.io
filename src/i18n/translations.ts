@@ -22,13 +22,11 @@ export const translations = {
     about: {
       eyebrow: "A bit about me",
       title: "I grew up switching languages mid-sentence.",
-      prose1: "I'm Malaysian, and like a lot of Malaysians I picked up a few languages just by living. English, Mandarin, Malay, and Hokkien all got tangled together at the dinner table, and I never really thought of it as a skill until people started pointing it out.",
+      prose1: "I'm Malaysian, and like a lot of Malaysians I picked up a few languages just by living. English and Mandarin got tangled together at the dinner table, and I never really thought of it as a skill until people started pointing it out.",
       prose2_part1: "I came to Shanghai to study electrical and computer engineering at the ",
       prose2_highlight: "UM-SJTU Joint Institute",
       prose2_part2: ", and I've been here ever since, figuring out what I actually want to do with all of it. The honest answer is that I've never been able to pick a single lane. I love the deep technical stuff, the kind where you have to understand exactly how a machine thinks. But I also love the messier side, taking an idea and turning it into a real thing that real people use, money and mistakes and all.",
-      prose3: "So I've spent my degree doing both, and I think that mix is the truest thing about me.",
-      marginNoteLabel: "the count",
-      marginNote: "I count in Hokkien, argue in Mandarin, and daydream in English."
+      prose3: "So I've spent my degree doing both, and I think that mix is the truest thing about me."
     },
     work: {
       eyebrow: "Things I couldn't leave alone",
@@ -152,13 +150,11 @@ export const translations = {
     about: {
       eyebrow: "关于我",
       title: "我从小就在一句话里切换几种语言。",
-      prose1: "我是马来西亚人。和许多马来西亚人一样，我仅仅在日常生活中就学会了几种语言。英语、普通话、马来语和闽南语（福建话）在餐桌上混杂在一起，我从来没觉得这是一种技能，直到别人开始指出这一点。",
+      prose1: "我是马来西亚人。和许多马来西亚人一样，我仅仅在日常生活中就学会了几种语言。英语和普通话在餐桌上混杂在一起，我从来没觉得这是一种技能，直到别人开始指出这一点。",
       prose2_part1: "我来到上海，在交大密西根学院（",
       prose2_highlight: "UM-SJTU Joint Institute",
       prose2_part2: "）学习电子与计算机工程，自那以后就一直待在这里，探索自己到底想用所学做点什么。坦白说，我从来无法只选一条道路。我喜欢深度的技术，那种需要你精确理解机器如何思考的领域；但我也喜欢那些更具挑战性、更“混乱”的一面——将一个想法落地，变成真实的人们会使用的真实产品，哪怕伴随着资金成本和重重失误。",
-      prose3: "所以我的大学时光都在这两者之间度过，而我认为这种融合正是最真实的自我。",
-      marginNoteLabel: "语言习惯",
-      marginNote: "我用闽南语心算，用普通话辩论，用英语白日做梦。"
+      prose3: "所以我的大学时光都在这两者之间度过，而我认为这种融合正是最真实的自我。"
     },
     work: {
       eyebrow: "我无法置之不理的事",
